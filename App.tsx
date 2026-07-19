@@ -5,6 +5,9 @@ import { StyleSheet, Text, View } from 'react-native';
 const App = (): React.JSX.Element => {
 
 
+  const testFunc = (): string/*ここに戻り値の方型*/ => {
+    return 'a';
+  }
   return (
     <View style={styles.container}>
       <Text>Open up App.tsx to start working on your apdp!!sS!</Text>
@@ -18,7 +21,7 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
-    justifyContent: 'center',
-  },
+    justifyContent: 'center'
+  }
 });
 export default App;
