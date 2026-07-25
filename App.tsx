@@ -1,15 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import Hello from './src/components/Hello';
 
-const App = (): React.JSX.Element => {
+const App = (): React.JSX.Element/*reactのエレメント*/ => {
 
-
-  const testFunc = (): string/*ここに戻り値の方型*/ => {
-    return 'a';
-  }
   return (
     <View style={styles.container}>
+      <Hello bang>World</Hello>
+      <Hello style={{ fontSize: 16 }} bang={true}>World</Hello>
       <Text>Open up App.tsx to start working on your apdp!!sS!</Text>
       <StatusBar style="auto" />
     </View>
