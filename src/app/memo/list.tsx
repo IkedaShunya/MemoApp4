@@ -4,6 +4,9 @@ import React from 'react';
 import Header from '../../components/Header';
 import MemoListItem from '../../components/MemoListItem';
 import CircleButton from '../../components/CircleButton';
+import { Feather } from '@expo/vector-icons'
+
+import Icon from '../../components/icon';
 
 const List = (): React.JSX.Element => {
     return (
@@ -12,7 +15,9 @@ const List = (): React.JSX.Element => {
             <MemoListItem />
             <MemoListItem />
             <MemoListItem />
-            <CircleButton>+</CircleButton>
+            <CircleButton>
+                <Icon name='pencil' size={40} color='#ffffff' />
+            </CircleButton>
         </View>
     )
 }
